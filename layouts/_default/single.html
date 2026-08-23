@@ -7,7 +7,7 @@
       {{ range . }}<span class="tag">#{{ . }}</span>{{ end }}
     {{ end }}
   </p>
-  {{ if in .TableOfContents.String "<li>" }}
+  {{ if in (printf "%s" .TableOfContents) "<li>" }}
   <nav class="toc">
     <p class="toc-title">目次</p>
     {{ .TableOfContents }}
