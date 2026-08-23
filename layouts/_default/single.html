@@ -7,6 +7,12 @@
       {{ range . }}<span class="tag">#{{ . }}</span>{{ end }}
     {{ end }}
   </p>
+  {{ if in .TableOfContents.String "<li>" }}
+  <nav class="toc">
+    <p class="toc-title">目次</p>
+    {{ .TableOfContents }}
+  </nav>
+  {{ end }}
   <div class="post-content">
     {{ .Content }}
   </div>
