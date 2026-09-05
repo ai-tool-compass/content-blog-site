@@ -4,6 +4,7 @@ title = "生成AI・業務効率化ツール比較ブログ"
 
 [params]
   description = "生成AI・業務効率化SaaS/ツールの比較・紹介ブログ"
+  googleAnalyticsID = "G-EGBTBZB9J3"
 
 [markup.goldmark.renderer]
   unsafe = true
