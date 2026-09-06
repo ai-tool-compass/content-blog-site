@@ -136,11 +136,14 @@ h1 { font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--accent-dark); }
 .post-content a:hover { color: var(--accent2); }
 
 .post-content table {
+  display: block;
   width: 100%;
+  min-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border-collapse: collapse;
   margin: 1.5rem 0;
   border-radius: 8px;
-  overflow: hidden;
   box-shadow: var(--card-shadow);
 }
 
@@ -150,11 +153,13 @@ h1 { font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--accent-dark); }
   text-align: left;
   padding: 0.7rem 1rem;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .post-content td {
   padding: 0.7rem 1rem;
   border-bottom: 1px solid var(--border);
+  white-space: nowrap;
 }
 
 .post-content tbody tr:nth-child(even) { background: #f6f8fa; }
